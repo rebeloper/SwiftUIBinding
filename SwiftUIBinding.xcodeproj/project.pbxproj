@@ -13,6 +13,12 @@
 		C99483CC25EAB2D000CAC623 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99483B725EAB2CE00CAC623 /* ContentView.swift */; };
 		C99483CD25EAB2D000CAC623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99483B825EAB2D000CAC623 /* Assets.xcassets */; };
 		C99483CE25EAB2D000CAC623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99483B825EAB2D000CAC623 /* Assets.xcassets */; };
+		C99483E225EAB39500CAC623 /* SesitiveDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99483E125EAB39500CAC623 /* SesitiveDataView.swift */; };
+		C99483E625EAB72D00CAC623 /* SensitiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99483E525EAB72D00CAC623 /* SensitiveData.swift */; };
+		C99483EA25EAB7D800CAC623 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99483E925EAB7D800CAC623 /* ContentViewModel.swift */; };
+		C99483EE25EAB92700CAC623 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99483ED25EAB92700CAC623 /* DetailView.swift */; };
+		C99483F225EABA5900CAC623 /* DeepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99483F125EABA5900CAC623 /* DeepView.swift */; };
+		C99483F625EABBFC00CAC623 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99483F525EABBFC00CAC623 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		C99483C525EAB2D000CAC623 /* SwiftUIBinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99483C725EAB2D000CAC623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C99483C825EAB2D000CAC623 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		C99483E125EAB39500CAC623 /* SesitiveDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesitiveDataView.swift; sourceTree = "<group>"; };
+		C99483E525EAB72D00CAC623 /* SensitiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveData.swift; sourceTree = "<group>"; };
+		C99483E925EAB7D800CAC623 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		C99483ED25EAB92700CAC623 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C99483F125EABA5900CAC623 /* DeepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepView.swift; sourceTree = "<group>"; };
+		C99483F525EABBFC00CAC623 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +69,10 @@
 		C99483B525EAB2CE00CAC623 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				C99483B625EAB2CE00CAC623 /* SwiftUIBindingApp.swift */,
-				C99483B725EAB2CE00CAC623 /* ContentView.swift */,
+				C99483DE25EAB34500CAC623 /* Models */,
+				C99483DB25EAB30C00CAC623 /* Views */,
+				C99483DA25EAB30400CAC623 /* ViewModels */,
+				C99483D925EAB2F100CAC623 /* Main */,
 				C99483B825EAB2D000CAC623 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -88,6 +102,58 @@
 				C99483C825EAB2D000CAC623 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		C99483D925EAB2F100CAC623 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C99483B625EAB2CE00CAC623 /* SwiftUIBindingApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C99483DA25EAB30400CAC623 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C99483E925EAB7D800CAC623 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C99483DB25EAB30C00CAC623 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C99483DD25EAB33F00CAC623 /* Main */,
+				C99483DC25EAB33A00CAC623 /* Sub */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C99483DC25EAB33A00CAC623 /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				C99483E125EAB39500CAC623 /* SesitiveDataView.swift */,
+			);
+			path = Sub;
+			sourceTree = "<group>";
+		};
+		C99483DD25EAB33F00CAC623 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C99483B725EAB2CE00CAC623 /* ContentView.swift */,
+				C99483ED25EAB92700CAC623 /* DetailView.swift */,
+				C99483F125EABA5900CAC623 /* DeepView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C99483DE25EAB34500CAC623 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C99483E525EAB72D00CAC623 /* SensitiveData.swift */,
+				C99483F525EABBFC00CAC623 /* Settings.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +254,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99483CB25EAB2D000CAC623 /* ContentView.swift in Sources */,
+				C99483EE25EAB92700CAC623 /* DetailView.swift in Sources */,
+				C99483F625EABBFC00CAC623 /* Settings.swift in Sources */,
 				C99483C925EAB2D000CAC623 /* SwiftUIBindingApp.swift in Sources */,
+				C99483E625EAB72D00CAC623 /* SensitiveData.swift in Sources */,
+				C99483F225EABA5900CAC623 /* DeepView.swift in Sources */,
+				C99483E225EAB39500CAC623 /* SesitiveDataView.swift in Sources */,
+				C99483EA25EAB7D800CAC623 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
